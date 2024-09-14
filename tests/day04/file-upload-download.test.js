@@ -54,6 +54,7 @@ test.describe("File upload and download", () => {
         
         expect(download.suggestedFilename()).toBe("Sesson3.txt");
         
+        //Save the downloaded file
         const downloadPath = path.join(__dirname, "download", download.suggestedFilename()); 
 
         await download.saveAs(downloadPath);
